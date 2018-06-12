@@ -1,0 +1,14 @@
+<div class="navbar-wagon">
+  <div class="navbar-wagon-right hidden-xs hidden-sm">
+    <a href="" class="navbar-wagon-item navbar-wagon-link"><%= link_to "Write New Article", new_article_path %> </a>
+  </div>
+</div>
+<h1>Welcome on NewsWeb</h1>
+
+
+<ul>
+<% @articles.each do |articl| %>
+<li><%= link_to articl.title, article_path(articl)%></li>
+<% end %>
+
+</ul>

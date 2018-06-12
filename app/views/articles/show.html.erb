@@ -1,0 +1,8 @@
+<div class="navbar-wagon">
+  <div class="navbar-wagon-right hidden-xs hidden-sm">
+    <a href="" class="navbar-wagon-item navbar-wagon-link"><%= link_to "Write New Article", new_article_path %> </a>
+  </div>
+</div>
+<h1>TITLE <%= @article.title %> <%= link_to "edit article", edit_article_path %> <%= link_to "delete article", article_destroy_path, method: :delete %></h1>
+<h1>CONTENT <%= @article.content %></h1>
+

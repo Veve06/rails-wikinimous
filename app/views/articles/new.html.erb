@@ -1,0 +1,14 @@
+<div class="navbar-wagon">
+  <div class="navbar-wagon-right hidden-xs hidden-sm">
+    <a href="" class="navbar-wagon-item navbar-wagon-link"><%= link_to "Write New Article", new_article_path %> </a>
+  </div>
+</div>
+<%= form_for(@article) do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+  <%= f.label :content %>
+  <%= f.text_field :content %>
+  <%= f.submit %>
+<% end %>
+
+
